@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="317dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="178dp"
+        android:ems="10"
+        android:hint="kullanıcı adınızı giriniz:"
+        android:inputType="textPersonName"
+        android:textColorHint="?android:attr/colorEdgeEffect"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oyun" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sen de kelimelen,kelimelendikçe öğren !"
+        android:textColor="?android:attr/colorEdgeEffect"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="kaydet"
+        android:stateListAnimator="@android:anim/decelerate_interpolator"
+        android:text="üye olunuz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSelectHandleRight="@android:drawable/btn_star_big_on"
+        android:theme="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="girisYapiniz"
+        android:stateListAnimator="@android:anim/decelerate_interpolator"
+        android:text="giriş yapınız"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSelectHandleRight="@android:drawable/btn_star_big_on"
+        android:theme="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="şifrenizi giriniz:"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="309dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="33dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
